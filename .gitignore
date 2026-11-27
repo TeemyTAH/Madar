@@ -1,24 +1,24 @@
-# بيئة Python الافتراضية وملفاتها المؤقتة
 .venv/
-venv/
 __pycache__/
 *.py[cod]
-*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 .env
+storage/backups/
+storage/temp_uploads/
 
-# الواجهة الأمامية (React / Vite)
+# Per-install API signing secret
+storage/.madar_auth_secret
+
+# Local frontend dependencies and build output
 frontend/node_modules/
 frontend/dist/
-frontend/.env*
+**/.env
 
-# التخزين المحلي وقاعدة البيانات والنماذج الكبيرة
-storage/
-models/
-*.db
-*.sqlite
-*.sqlite3
-*.gguf
-*.bin
-*.pt
-*.pth
-*.onnx
+# Local student data and database files (never commit personal records)
+storage/*.sqlite3
+storage/*.sqlite3-*
+storage/original_images/
+storage/processed_images/
+storage/exports/

@@ -1,0 +1,34 @@
+[
+  {
+    "sample_id": "MADAR_GT_001",
+    "expected": "\u0627\u0644\u0633\u0644\u0627\u0645 \u0639\u0644\u064a\u0643\u0645",
+    "GREEDY": {
+      "prediction": "\u0627\u0644\u0645 \u0639\u0644\u064a\u0643\u0645",
+      "CER": 25.0,
+      "WER": 50.0
+    },
+    "BEAM": {
+      "prediction": "\u0627\u0644\u0645 \u0639\u0644\u064a\u0643\u0645",
+      "CER": 25.0,
+      "WER": 50.0
+    },
+    "beam_confidence": 0.1746705657953834,
+    "beam_valid": true
+  },
+  {
+    "sample_id": "MADAR_GT_002",
+    "expected": "\u0630\u0643\u0627\u0621 \u0627\u0635\u0637\u0646\u0627\u0639\u064a",
+    "GREEDY": {
+      "prediction": "\u0643\u0627 \u0627\u0635\u062d\u0637\u0646\u0627",
+      "CER": 41.67,
+      "WER": 100.0
+    },
+    "BEAM": {
+      "prediction": "\u0643\u0627 \u0627\u0635\u062d\u0637\u0646\u0627\u064a",
+      "CER": 33.33,
+      "WER": 100.0
+    },
+    "beam_confidence": 0.1283857909253707,
+    "beam_valid": true
+  }
+]

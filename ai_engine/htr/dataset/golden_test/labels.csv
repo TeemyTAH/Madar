@@ -1,0 +1,3 @@
+﻿sample_id,image_path,ground_truth,width,height,verification,role,sha256
+MADAR_GT_001,images/line_001.png,السلام عليكم,385,91,USER_CONFIRMED,GOLDEN_TEST_ONLY,3a80a972703fb8af40c6c6644f7941e694bea1938d5598cc7adc50425391cbef
+MADAR_GT_002,images/line_002.png,ذكاء اصطناعي,509,76,USER_CONFIRMED,GOLDEN_TEST_ONLY,482055a36eda087007b7a5c076cd29d32c90afee6dfa57f6a4f6363ab5b33726

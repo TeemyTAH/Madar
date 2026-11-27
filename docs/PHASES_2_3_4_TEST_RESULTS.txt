@@ -1,0 +1,21 @@
+MADAR PHASES 2-4 TEST RESULTS
+============================
+Compile check: PASS
+Full pytest suite: 49 passed
+Schema integrity suite: 14 passed
+Database manager suite: 6 passed
+
+Coverage includes:
+- HTR preprocessing, CTC greedy/beam decoding, Arabic RTL ordering.
+- Page segmentation integration with a controlled detector/session double.
+- HTR page and multi-page answer persistence.
+- HTR processing-run success/failure lifecycle.
+- Normalized answer-region mapping and path traversal rejection.
+- Image processing atomic output cleanup.
+- Upload API image-processing run tracking and duplicate-upload cleanup.
+- Deterministic MCQ/True-False and accepted-answer grading.
+- Rubric evidence-overlap review workflow and current/history evaluation records.
+- Final-approval protection and API endpoint integration.
+
+Important limitation:
+The actual ONNX Runtime page smoke test was not executable in the build environment because onnxruntime was not installed there and network access was unavailable. Run `python -m ai_engine.htr.smoke_test` on the Windows machine with ONNX Runtime installed.

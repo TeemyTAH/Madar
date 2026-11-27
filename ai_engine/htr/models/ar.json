@@ -1,0 +1,8 @@
+{
+ "charset": " !\"#,-.1:;،؛؟ءآأؤإئابةتثجحخدذرزسشصضطظعغـفقكلمنهوىي",
+ "height": 64,
+ "downsample": 4,
+ "script": "arabic",
+ "rtl": true,
+ "source": "runs/lite_ar/model_fp32.onnx"
+}

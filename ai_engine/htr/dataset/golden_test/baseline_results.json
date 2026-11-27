@@ -1,0 +1,46 @@
+{
+  "benchmark": "MADAR_ARABIC_HTR_BASELINE",
+  "timestamp": "2026-11-27T00:25:59.219841+00:00",
+  "model_sha256": "ac72985c02ff910a8660e0ccb777b0f5d76142e591f18813ae7975215764aa85",
+  "sample_count": 2,
+  "character_errors": 8,
+  "ground_truth_characters": 24,
+  "aggregate_CER": 0.3333333333333333,
+  "word_errors": 3,
+  "ground_truth_words": 4,
+  "aggregate_WER": 0.75,
+  "results": [
+    {
+      "sample_id": "MADAR_GT_001",
+      "ground_truth": "\u0627\u0644\u0633\u0644\u0627\u0645 \u0639\u0644\u064a\u0643\u0645",
+      "prediction": "\u0627\u0644\u0645 \u0639\u0644\u064a\u0643\u0645",
+      "raw_prediction": "\u0627\u0644\u0645 \u0639\u0644\u064a\u0643\u0645",
+      "character_errors": 3,
+      "ground_truth_characters": 12,
+      "CER": 0.25,
+      "word_errors": 1,
+      "ground_truth_words": 2,
+      "WER": 0.5,
+      "preprocessing_ms": 24.17,
+      "inference_ms": 2.53,
+      "total_ms": 26.76,
+      "image_sha256": "3a80a972703fb8af40c6c6644f7941e694bea1938d5598cc7adc50425391cbef"
+    },
+    {
+      "sample_id": "MADAR_GT_002",
+      "ground_truth": "\u0630\u0643\u0627\u0621 \u0627\u0635\u0637\u0646\u0627\u0639\u064a",
+      "prediction": "\u0643\u0627 \u0627\u0635\u062d\u0637\u0646\u0627",
+      "raw_prediction": "\u0643\u0627 \u0627\u0635\u062d\u0637\u0646\u0627",
+      "character_errors": 5,
+      "ground_truth_characters": 12,
+      "CER": 0.416667,
+      "word_errors": 2,
+      "ground_truth_words": 2,
+      "WER": 1.0,
+      "preprocessing_ms": 1.35,
+      "inference_ms": 1.94,
+      "total_ms": 3.34,
+      "image_sha256": "482055a36eda087007b7a5c076cd29d32c90afee6dfa57f6a4f6363ab5b33726"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+MADAR PHASE 6 — TEST RESULTS
+============================
+
+Run date: 2026-11-27
+Python: 3.x (container runtime)
+
+1. Python compilation
+   Command: python -m compileall -q backend ai_engine
+   Result: PASS
+
+2. Full automated test suite
+   Command: python -m pytest -q
+   Result: 61 passed
+
+3. Reporting-specific coverage
+   - Exam analytics and approved-only final score calculation: PASS
+   - Pass/fail threshold and finalized-only denominator: PASS
+   - Question difficulty and approved-sample calculations: PASS
+   - Student transcript pending/final separation: PASS
+   - Teacher activity report and self-only access control: PASS
+   - XLSX generation, RTL worksheet settings, four sheets: PASS
+   - CSV UTF-8 BOM and Arabic headers: PASS
+   - Provisional scores omitted from gradebook exports: PASS
+   - Export audit records created: PASS
+   - Spreadsheet formula-injection neutralization: PASS
+   - Empty exam returns null statistics safely: PASS
+   - Missing exam and invalid format/threshold handling: PASS
+   - Bearer authentication required on report endpoints: PASS
+
+4. OpenAPI registration
+   - GET /api/v1/reports/overview: PASS
+   - GET /api/v1/reports/exams/{exam_id}/analytics: PASS
+   - GET /api/v1/reports/exams/{exam_id}/gradebook: PASS
+   - GET /api/v1/reports/students/{student_id}: PASS
+   - GET /api/v1/reports/teachers/{teacher_id}: PASS
+   - GET /api/v1/reports/exams/{exam_id}/export: PASS
+   - Application version: 1.3.0
+
+5. Sample database preservation
+   - SHA256 before/after: 581da7ddd201db09ebe82cb476fe51a827ba9d8e81cb44f30b2a5e750e07e879
+   - Byte length before/after: 270336
+   - Result: IDENTICAL
+
+6. Remaining scope (intentionally not claimed complete)
+   - Phase 7: Arabic RTL teacher-facing user interface.
+   - Phase 8: final interface/API/AI integration and end-to-end release validation.
+   - HTR model accuracy validation on a representative handwriting dataset and semantic model training remain separate research/expansion work.
